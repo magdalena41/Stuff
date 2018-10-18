@@ -8,10 +8,10 @@
 # analogicznie exp, gamma, unif, pois, ...
 
 mi <- 0.5
-sigma <- 2 # sigma jest funkcj¹ R, ale mo¿emy nadpisaæ zmienn¹
+sigma <- 2 # sigma jest funkcja R, ale mozemy nadpisac zmienna
 N <- 1000
 
-X <- rnorm(n = N, mean = mi, sd = sigma) # generujemy wektor X (d³ugoœci N) z rozk³adu normalnego
+X <- rnorm(n = N, mean = mi, sd = sigma) # generujemy wektor X (dlugosci N) z rozkladu normalnego
 X
 mean(X)
 var(X)
@@ -42,7 +42,6 @@ X[X>VaR_norm(c, mi, sigma)]
 length(X[X>VaR_norm(c, mi, sigma)])
 length(X[X>VaR_norm(c, mi, sigma)])/N
 
-# ka¿dy mo¿e sobie zrobiæ teraz dla rozk³adu jakiego tam chce
 # exp
 
 lambda <- 15
